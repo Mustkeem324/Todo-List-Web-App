@@ -1,0 +1,50 @@
+.custom_input {
+	display: flex;
+	align-items: center;
+	position: relative;
+	max-width: 100%;
+}
+
+.input {
+	font-size: 27px;
+	padding: 7px 15px;
+	width: 100%;
+	padding-left: 35px;
+	outline: none;
+	background: #FFFFFF;
+	color: #000000;
+	border: 3px solid #C4D1EB;
+	border-radius: 10px;
+	box-shadow: 3px 3px 2px 0px #E2E2E2;
+	transition: .3s ease;
+}
+
+.input:focus {
+	background: #F2F2F2;
+	border: 2px solid #5A7EC7;
+	border-radius: 10px;
+}
+
+.input::placeholder {
+	color: #DDDDDD;
+}
+
+.svg_icon {
+	position: absolute;
+	left: 10px;
+	fill: #4660DC;
+	width: 22px;
+	height: 22px;
+}
+.cr-wrapper {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .cr-wrapper input[type="radio"],
+  .cr-wrapper input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  
+  

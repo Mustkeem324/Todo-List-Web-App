@@ -1,0 +1,168 @@
+/* Base styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #FFFFFF; */
+    background-color: rgba(89, 131, 252, 1);
+    background-image: linear-gradient(90deg, rgba(89, 131, 252, 1) 0%, rgba(41, 53, 86, 1) 100%); 
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #FFFFFF;
+  }  
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333; /* Darker text for heading */
+  }
+  
+  /* Input and Button styles */
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #taskInput {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #38a3a5; /* Blue button */
+    color: #fff; /* White text */
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out; /* Smoother button hover */
+  }
+  
+  button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  /* Task List styles */
+  #taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd; /* Light border between tasks */
+  }
+  
+  .task-item input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .task-item label {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .task-item.completed label {
+    text-decoration: line-through;
+    color: #aaa; /* Grayed out completed tasks */
+  }
+  
+  /* Info section styles */
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #totalTasks {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .info button {
+    margin-left: 10px;
+  }
+  
+  .container.dark-theme {
+    background-color: #474646; /* Dark background */
+    color: #fff; /* White text */
+  }
+  
+  .dark-theme h1,
+  .dark-theme p,
+  .dark-theme label {
+    color: inherit; /* Inherit white text color */
+  }
+  
+  .dark-theme button {
+    background-color: #4CAF50; /* Green button */
+    color: #fff; /* White text */
+  }
+  
+  /* Add styles for hover effects in the dark theme (optional) */
+  .dark-theme button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+  }
+  .dark-mode {
+    background-color: #414141;
+    color: #fff;
+  }
+  
+  .light-mode {
+    background-color: #fff;
+    color: #222;
+  }
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .info button {
+      margin: 5px;
+    }
+  }
+  
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 7s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 110px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #FFFFFF};
