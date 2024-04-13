@@ -30,7 +30,7 @@ This is a simple web application for managing your todo list. You can add new ta
 - JavaScript
 
 ## Preview
-![Todo List Preview](./preview.png)
+![Todo List Preview](images.png)
 
 ## Credits
 This web application is created by [Your Name].
